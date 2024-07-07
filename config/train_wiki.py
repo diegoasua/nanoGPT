@@ -16,12 +16,12 @@ wandb_run_name = 'mini-gpt-wiki'
 dataset = 'wiki'
 gradient_accumulation_steps = 1
 batch_size = 8 # batch size
-block_size = 512 # context of up to 4096 previous tokens
+block_size = 1024 # context of up to 4096 previous tokens
 
 # baby GPT model :)
-n_layer = 3
-n_head = 6
-n_embd = 384
+n_layer = 2
+n_head = 4
+n_embd = 256
 dropout = 0.2
 
 learning_rate = 1e-3 # with baby networks can afford to go a bit higher
